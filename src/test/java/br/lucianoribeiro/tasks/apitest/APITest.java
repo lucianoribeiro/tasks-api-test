@@ -4,8 +4,9 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import org.hamcrest.CoreMatchers;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
+import jdk.jfr.ContentType;
 
 public class APITest {
 	
