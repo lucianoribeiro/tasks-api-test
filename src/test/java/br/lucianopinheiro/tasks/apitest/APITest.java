@@ -1,13 +1,12 @@
 package br.lucianopinheiro.tasks.apitest;
 
 import static org.hamcrest.CoreMatchers.equalTo;
-
 import org.hamcrest.CoreMatchers;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import io.restassured.RestAssured;
-
 import jdk.jfr.ContentType;
 
 @SuppressWarnings("unused")
@@ -41,8 +40,8 @@ public class APITest {
 			.post("/todo")
 		.then().assertThat()	
 			.log().all()
-			.statusCode(equalTo(201))
-			;
+			.statusCode(equalTo(201));
+			
 	}
 	
 	@Test
@@ -59,6 +58,4 @@ public class APITest {
 			.body("message",CoreMatchers.is("Due date must not be in past"))
 			;
 	}
-
-
 }
