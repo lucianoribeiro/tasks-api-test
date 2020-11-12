@@ -2,5 +2,8 @@
 .project
 .settings/**
 target/**
+<<<<<<< HEAD
 	
+=======
+>>>>>>> d9e9547007cf3f326eb98e1f222616e29608928c
 
